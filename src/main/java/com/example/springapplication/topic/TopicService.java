@@ -38,4 +38,8 @@ public class TopicService {
             }
         }
     }
+
+    public void deleteTopic(String id) {
+        listTopics.removeIf(topic -> topic.getId().equals(id));
+    }
 }
